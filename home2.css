@@ -30,7 +30,7 @@ ul#footermenu_min{
 	color:#ffffff;		/*文字色*/
     font-weight: bold;
     display:block;			/*リンク部分をブロック表示にする*/
-    width:150px; height:20px;	/*幅と高さ*/
+    width:200px; height:20px;	/*幅と高さ*/
     margin: 30px 4px 0px 4px;
     box-sizing: border-box;
     text-align:center;	/*テキストをセンター揃えにする*/
@@ -42,6 +42,10 @@ ul#footermenu_min{
 }
 
 .footer3{
-    margin-top: 30px;
+    margin-top: 70px;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 0px 10px 0px ;
+    font-size: 10px;
 }
 
