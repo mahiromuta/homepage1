@@ -111,7 +111,7 @@
 
 #photo_min {
     display: block;
-    width: 440px;
+    width: 400px;
     margin-bottom: 0px;
     text-align: center;
     overflow: hidden;
@@ -137,7 +137,7 @@
 table {
     border-collapse: collapse;
     margin-top: 0px;
-    width: 400px;
+    width: 360px;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
@@ -152,7 +152,7 @@ table {
 }
 
 .pcontent{
-    width: 440px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

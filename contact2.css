@@ -109,9 +109,14 @@
 
 
 /*コンテンツ*/
-h3{
-    margin: 40px 30px 20px 20px;
+.ccontent1 h3{
+    margin: 40px 10px 20px 20px;
     padding: 40px 10px 10px 10px;
+}
+
+.map h3{
+    margin: 40px 10px 20px 0px;
+    padding: 40px 10px 10px 0px;
 }
 
 table {
@@ -135,7 +140,7 @@ table {
 .map li p{
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .gmap {
