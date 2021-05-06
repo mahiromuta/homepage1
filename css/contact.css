@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+#img_contact{
+    width: 100%; height: 100px;
+    background-color: #ff0000;
+    margin-top: 10px;
+    position: relative;
+}
+
+.co_absolute{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+	width: 300px; height:100px;	/*トップページのヘッダ画像の表示サイズを指定*/
+    margin-left: auto;
+    margin-right: 10px; 
+}
+
+.co_header{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100px;
+    margin: 30px 100px;
+}
+
+.ccontent{
+    background-color: #ffffff;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    padding: 1rem 0 1rem 1rem;
+    color: dimgray;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    vertical-align: top;
+    text-align: left;
+}
+
+td {
+    padding: 1rem 0 1rem 1rem;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    text-align: left;
+}
+
+h3{
+    font-size: 20px;
+    width: 140px;
+    margin: 50px 30px 0px 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ccontent1 li{
+    float: left;
+    list-style: none;
+}
+
+.gmap {
+    margin-left: 200px;
+    padding-bottom: 50px;
+}
+
+.map{
+    clear: left;
+}
+
+.map li{
+    float: left;
+    list-style: none;
+}
+
+.map li p{
+    font-size: 15px;
+    margin-top: 60px;
+}
+
+.gmap{
+    clear: left;
+}
+
+/* CSSアニメーションの指定 */
+.contact1{
+    animation: SlideIn 1.2s;
+}
+
+/* CSSアニメーションの設定 */
+@keyframes SlideIn {
+    0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(-80%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

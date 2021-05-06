@@ -1,0 +1,181 @@
+<div class="pcontent">
+        <div class="pcontent1">
+            <div class="prof1">
+                <div id="photo">
+                    <img src="profile1.jpg" width="500" height="375" alt="">
+                    <img src="profile2.jpg" width="500" height="375" alt="">
+                    <img src="profile3.jpg" width="500" height="375" alt="">
+                </div>
+            </div>
+            <div class="prof1">
+                <table class="ptable1">
+                    <tr>
+                        <th>名前</th>
+                        <td>牟田 真尋</td>
+                    </tr>
+                    <tr>
+                        <th>生年月日</th>
+                        <td>2000年2月9日</td>
+                    </tr>
+                    <tr>
+                        <th>所属</th>
+                        <td>大阪大学 原田研究室</td>
+                    </tr>
+                    <tr>
+                        <th>出身高校</th>
+                        <td>大阪府立北野高校</td>
+                    </tr>
+                    <tr>
+                        <th>趣味</th>
+                        <td>映画、ドラマ鑑賞</td>
+                    </tr>
+                    <tr>
+                        <th>特技</th>
+                        <td>球技、書道</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pcontent li{
+    list-style: none;
+}
+
+.pcontent{
+    background-color: #ffffff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+th {
+    padding: 1rem 0 1rem 1rem;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    vertical-align: top;
+    text-align: left;
+}
+
+td {
+    padding: 1rem 0 1rem 0;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    text-align: left;
+}
+
+
+
+<div class="Form">
+    <p class="lead-form"><h3>お問合せ</h3></p>
+
+    <form>
+
+    <div class="item">
+        <label class="label">E-mail</label>
+        <input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください。">
+    </div>
+
+    <div class="item">
+        <label class="label">Message</label>
+        <textarea class="inputs" placeholder="お問い合わせ内容を入力してください。"></textarea>
+    </div>
+
+    <div class="btn-area">
+        <input type="submit" value="送信する">
+    </div>
+    </form>
+
+
+.Form {
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    max-width: 80%;
+    background-color: #ffffff;
+}
+
+.lead-form{
+    text-align: center;
+    font-size:20px;
+}
+
+form{
+    width:500px;
+    margin:0 auto;
+}
+
+.item{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.label{
+    float: left;
+    margin-right: 20px;
+    margin-left: 5px;
+    width:135px;
+    border-left: solid 3px #ff0000;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.input{
+    float: left;
+    width:300px;
+}
+
+input[type="email"]{
+    border: solid 1px #cccccc;
+    border-radius:5px;
+    padding:10px;
+    width: 300px;
+    font-size: 15px;
+}
+
+textarea{
+    border: solid 1px #cccccc;
+    border-radius:5px;
+    padding: 10px;
+    width: 300px;
+    height: 160px;
+    font-size: 15px;
+}
+
+.btn-area{
+    text-align: center;
+}
+
+input[type="submit"]{
+    background: #ff0000;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0px 5px 10px 5px;
+}
+input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+}

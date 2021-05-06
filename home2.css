@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*パソコン用メニューを表示させない*/
+/*スマホ用メニューを非表示から表示に切り替える*/
+#footermenu_min {
+	display: block;
+}
+/*PC用メニューを非表示にする*/
+#footermenu {
+	display: none;
+}
+
+/*============================================
+フッター
+============================================*/
+
+ul#footermenu_min{
+    width: 588px; height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footermenu_min li{
+    list-style-type: none;   /*リストマーカー無し*/
+    flex-wrap: wrap;    /*インライン表示*/
+    float: left;
+}
+
+#footermenu_min li a{
+	color:#ffffff;		/*文字色*/
+    font-weight: bold;
+    display:block;			/*リンク部分をブロック表示にする*/
+    width:150px; height:20px;	/*幅と高さ*/
+    margin: 30px 4px 0px 4px;
+    box-sizing: border-box;
+    text-align:center;	/*テキストをセンター揃えにする*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+}
+
+#footermenu_min li a:hover{
+    color: #777777;
+}
+
+.footer3{
+    margin-top: 30px;
+}
+

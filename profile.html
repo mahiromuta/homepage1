@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PROFILE|MahiroMuta_HP</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1350px)" href="profile3.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="profile2.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="home2.css">
+
+    <style type="text/css">
+        #photo {
+            position: relative;
+        }
+        
+        #photo img {
+            position: absolute;
+        }
+    </style>
+        
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var setImg = '#photo';
+            var fadeSpeed = 1600;
+            var switchDelay = 5000;
+        
+            $(setImg).children('img').css({opacity:'0'});
+            $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+        
+            setInterval(function(){
+                $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+            },switchDelay);
+        });
+    </script>
+        
+</head>
+<body>
+<div id="pagebody">
+    <!-- ヘッダー -->
+    <div id="header">
+        <div class="navbar">
+            <div class="name">
+                <h1><a href="index.html">Mahiro Muta</a></h1>
+            </div>
+
+            <!-- メインメニュー -->
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="profile.html"><div class="selected">PROFILE</div></a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="link.html">LINK</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <!-- スマホ用 -->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul id="menu_min">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="research.html">RESEARCH</a></li>
+                        <li><a href="link.html">LINK</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="profile1">
+        <!-- ヘッダ画像 -->
+        <div id="img_profile">
+            <div class="square"></div>
+            <img src="./images/img_profile.png" alt="pr_img1" class="pr_absolute">
+            <div class="pr_header">PROFILE</div>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="pcontent">
+        <div class="pcontent1">
+            <li><div id="photo">
+                    <img src="profile1.jpg" width="500" height="375" alt="">
+                    <img src="profile4.jpg" width="500" height="375" alt="">
+                    <img src="profile2.jpg" width="500" height="375" alt="">
+                </div></li>
+            <!-- スマホ用 -->
+            <li><div id="photo_min">
+                <img src="profile1.jpg" width="400" height="300" alt="" class="photo1">
+            </div></li>
+            <li><div class="ptable"><table class="ptable1">
+                    <tr>
+                        <th>名前</th>
+                        <td>牟田 真尋</td>
+                    </tr>
+                    <tr>
+                        <th>生年月日</th>
+                        <td>2000年2月9日</td>
+                    </tr>
+                    <tr>
+                        <th>所属</th>
+                        <td>大阪大学 原田研究室</td>
+                    </tr>
+                    <tr>
+                        <th>出身高校</th>
+                        <td>大阪府立北野高校</td>
+                    </tr>
+                    <tr>
+                        <th>趣味</th>
+                        <td>映画、ドラマ鑑賞</td>
+                    </tr>
+                    <tr>
+                        <th>特技</th>
+                        <td>球技、書道</td>
+                    </tr>
+                </table></div></li>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer1">
+            <h2>Mahiro Muta</h2>
+        </div>
+
+        <div class="footer2">
+            <ul id="footermenu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="link.html">LINK</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- スマホ用 -->
+        <div class="footer2_min">
+            <ul id="footermenu_min">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="link.html">LINK</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="footer3">
+            Copyright (c) Mahiro Muta All Rights Reserved.
+        </div>
+
+    </footer>
+
+</div>
+</body>
+</html>
