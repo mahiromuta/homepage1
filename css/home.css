@@ -17,7 +17,7 @@ body{
 
 div#pagebody {
     width: 100%; margin: 0 auto;
-    background-color:#ffaaaa;		/*内容全体の背景色*/
+    background-color:#aaaaff;		/*内容全体の背景色*/
 }
 
 /*============================================
@@ -105,7 +105,7 @@ img {border:0;} 				/*画像のボーダーを0にする*/
 ============================================*/
 .ho_absolute{
     width: 70%;
-    background-color: #ff0000;
+    background-color: #0000ff;
     padding: 20px;
     margin-top: 10px;
     margin-left: 14%;
